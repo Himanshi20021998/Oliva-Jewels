@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Be Vietnam Pro", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #f6f4f1;
+}
+
+.designerSection{
+    background-color: #f6f4f1;
+}
+
+.mainDesignerSection{
+    display: flex;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+}
+
+.leftDesignerSection{
+    width: 50%;
+}
+
+.leftDesignerSectionContent{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #cbbeb4;
+    padding: 30px;
+    border: 3px solid #a78566;
+    border-radius: 15px;
+}
+
+.leftDesignerSectionContentHeader{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 1.25rem;
+}
+
+.leftDesignerSectionContentPointers{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px;
+}
+
+.rightDesignerSection{
+    width: 50%;
+}
+
+.rightDesignerSection img{
+    margin-top: 2px;
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.leftDesignerSectionContentButton{
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #a78566;
+    border: 1px solid #a78566;
+    border-radius: 5px;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftDesignerSectionContentButton:hover{
+    background-color: #755339;
+}
+
+.leftDesignerSectionContentButton a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.borderLine{
+    width: 1000px;
+    height: 2px;
+    background-color: #755339;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+    background-color: #f6f4f1;
+}
+
+.faq h2{
+    font-weight: 750;
+    font-size: 50px;
+    color: #382315;
+    margin-top: 40px;
+}
+
+.accordian{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+.accordian li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordian li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 800;
+    background: #a78566;
+    border-radius: 8px;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.accordian .content{
+    background: #a78566;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s, padding 0.2s;
+}
+
+.accordian input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordian input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+
+.faq .email-signup{
+    max-width: 700px;
+    margin: 20px auto 60px;
+}
+
+.faq small{
+    font-size: 20px;
+}
+
+.sectionOne{
+    background-color: #f6f6f6;
+}
+
+.sectionOneContent{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    align-items: center;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.sectionOneContentHeader{
+    font-weight: 800;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-size: 20px;
+    line-height: 19px;
+    text-align: left;
+}
+
+.sectionOneContentPara{
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 24px;
+}
+
+.sectionOneContentImg{
+    width: 100%;
+}
+
+.sectionOneContent2{
+    font-size: 32px;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-weight: 700;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.sectionOneContent2Header{
+    padding-top: 30px;
+    line-height: 38px;
+}
+
+.sectionOneContent2Download{
+    background-color: #a78566;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 1.5rem;
+    font-weight: 700;
+}
+
+.sectionOneContent2Download:hover{
+    background-color: #755339;
+}
+
+.sectionOneContent2DownloadAnchor{
+    text-decoration: none;
+    color: black;
+}
+
+.footer{
+    background-color: #f6f4f1;
+}
+
+.footerContent{
+    display: flex;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+    gap: 10.5rem;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.content h3{
+    color: #382315;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.content ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+}
+
+.footerLinks a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #755339;
+    font-weight: 700;
+}
+
+.footerIcons{
+    background-color: #a78566;
+}
+
+.footerIconsContent{
+    display: flex;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+    gap: 25rem;
+}
+
+.footerLogo{
+    object-fit: cover;
+}
+
+.icons{
+    display: flex;
+    gap: 10rem;
+}
+
+.icons a{
+    font-size: 30px;
+    color: #382315;
+    text-decoration: none;
+    font-weight: 700;
+}
